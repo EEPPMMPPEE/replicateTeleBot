@@ -1,0 +1,7 @@
+/.idea/
+/venv/
+/old_versions/
+/ai_modules/replicate_models.json
+/template_objects/texts.json
+/.env
+/Start_bot.sh

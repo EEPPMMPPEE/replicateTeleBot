@@ -1,0 +1,1 @@
+from ai_modules.Replicate_generation import replicate_gen, replicate_sd_regex
