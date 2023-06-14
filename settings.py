@@ -27,7 +27,9 @@ if dotenv_variables:
     dev_admin_id = os.getenv("DEV_ADMIN_ID", main_chat_id)
     generations_available_to_user = int(os.getenv("GENERATIONS_AVAILABLE_TO_USER", main_chat_id))
     restore_time = int(os.getenv("RESTORE_TIME", main_chat_id))
-else:
+
+if not os.getenv("TELEGRAM_BOT_API_TOKEN", False):
     os.environ["TELEGRAM_BOT_API_TOKEN"] = telegram_bot_api_token
+if not os.getenv("REPLICATE_API_TOKEN", False):
     os.environ["REPLICATE_API_TOKEN"] = replicate_api_token
 
