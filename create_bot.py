@@ -9,7 +9,7 @@ from settings import main_chat_id, dev_mode, dev_admin_id, generations_available
 def get_replicate_models(path="ai_modules/replicate_models.json"):
     def create_default_file(path=path):
         command, model, version = \
-            "SD", "stability-ai/stable-diffusion", "db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf"
+            "SD", "ai-forever/kandinsky-2", " 601eea49d49003e6ea75a11527209c4f510a93e2112c969d548fbb45b9c4f19f"
         message_data_type = ["text"]
         prompt_extend, neg_prompt_extend = "", ""
         params = {"negative_prompt": ""}
