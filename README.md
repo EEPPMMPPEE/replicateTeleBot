@@ -89,4 +89,4 @@ These project needs these API tokens:
 
 ## License <a name = "license"></a>
 
-[License](https://github.com/EEPPMMPPEE/replicateTeleBot/blob/main/LICENSE) - this project is licensed under Apache-2.0 license.
+[License](https://github.com/EEPPMMPPEE/replicateTeleBot/blob/master/LICENSE) - this project is licensed under Apache-2.0 license.
