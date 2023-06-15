@@ -11,7 +11,7 @@ telegram_bot_api_token = "9876543210:XXX_XXXXXXXXXXXXX-XXXXXX-XXXXXXXXXX"
 replicate_api_token = "X9_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 dev_mode = True  # activate /handlers/other.py
-dev_admin_id = None  # None or telegram_user_id for restrict development commands
+dev_admin_id = -1  # -1 or telegram_user_id for restrict development commands
 
 # the number of available AI generations to user and time before restore
 generations_available_to_user = 25

@@ -4,7 +4,7 @@ from aiogram.dispatcher.filters import Text
 
 
 async def my_id(message: types.Message):
-    if dev_admin_id in (message.from_user.id, False):
+    if dev_admin_id in (message.from_user.id, -1):
         await message.answer(f'your id:\n{message.from_user.id}\n\nchat_id:\n{message.chat.id}')
     return
 
