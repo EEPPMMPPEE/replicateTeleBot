@@ -23,10 +23,10 @@ if dotenv_variables:
         open(".env", "w", encoding="utf-8")
     load_dotenv()
     main_chat_id = int(os.getenv("MAIN_CHAT_ID", main_chat_id))
-    dev_mode = os.getenv("DEV_MODE", main_chat_id)
-    dev_admin_id = int(os.getenv("DEV_ADMIN_ID", main_chat_id))
-    generations_available_to_user = int(os.getenv("GENERATIONS_AVAILABLE_TO_USER", main_chat_id))
-    restore_time = int(os.getenv("RESTORE_TIME", main_chat_id))
+    dev_mode = os.getenv("DEV_MODE", dev_mode)
+    dev_admin_id = int(os.getenv("DEV_ADMIN_ID", dev_admin_id))
+    generations_available_to_user = int(os.getenv("GENERATIONS_AVAILABLE_TO_USER", generations_available_to_user))
+    restore_time = int(os.getenv("RESTORE_TIME", restore_time))
 
 if not os.getenv("TELEGRAM_BOT_API_TOKEN", False):
     os.environ["TELEGRAM_BOT_API_TOKEN"] = telegram_bot_api_token
