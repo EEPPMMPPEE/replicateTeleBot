@@ -8,7 +8,7 @@ from aiogram.dispatcher import FSMContext
 from aiogram.types import InputMediaPhoto
 from aiogram.utils.exceptions import ChatNotFound, CantInitiateConversation, CantTalkWithBots, BotBlocked
 from replicate.exceptions import ModelError, ReplicateError
-from create_bot import dp, bot, main_chat_id, replicate_models, replicate_calls, restore_time, generations_available_to_user, text_dict
+from create_bot import dp, bot, main_chat_id, replicate_models, replicate_calls, restore_time, generations_available_to_user, text_dict, script_dir
 from ai_modules import replicate_gen, replicate_sd_regex
 
 
@@ -87,7 +87,7 @@ async def sd_prompt(message: types.Message, state: FSMContext):
         user_count = next(count_generator)
         data["last_num"] = user_count
 
-    mes_id = (await message.reply_photo(open(r'./template_objects/base_img.jpg', 'rb'), text_dict["generation_in_progress"]))[
+    mes_id = (await message.reply_photo(open((script_dir / 'template_objects' / 'base_img.jpg').resolve(), 'rb'), text_dict["generation_in_progress"]))[
         'message_id']
     try:
         output = await replicate_gen(prompt, replicate_models[command], raw_params=raw_params, media=url)

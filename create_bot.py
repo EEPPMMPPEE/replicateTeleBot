@@ -3,10 +3,14 @@ import json
 from aiogram import Bot
 from aiogram.dispatcher import Dispatcher
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
+from pathlib import Path
 from settings import main_chat_id, dev_mode, dev_admin_id, generations_available_to_user, restore_time
 
 
-def get_replicate_models(path="ai_modules/replicate_models.json"):
+script_dir = Path(__file__).parent
+
+
+def get_replicate_models(path=(script_dir / "ai_modules" / "replicate_models.json").resolve()):
     def create_default_file(path=path):
         command, model, version = \
             "SD", "stability-ai/stable-diffusion", "db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf"
@@ -39,12 +43,12 @@ def get_replicate_models(path="ai_modules/replicate_models.json"):
     except json.JSONDecodeError:
         print('JSONDecodeError: "ai_modules/replicate_models.json"\n'
               '"ai_modules/replicate_models_default.json" was used instead')
-        replicate_models = create_default_file(path="ai_modules/replicate_models_default.json")
+        replicate_models = create_default_file(path=(script_dir / "ai_modules" / "replicate_models_default.json").resolve())
 
     return replicate_models
 
 
-def get_text_dict(path="template_objects/texts.json"):
+def get_text_dict(path=(script_dir / "template_objects" / "texts.json").resolve()):
     def create_default_file(path=path):
         text_dict = {
             "generation_in_progress": "Generation in progress...",
@@ -65,7 +69,7 @@ def get_text_dict(path="template_objects/texts.json"):
     except json.JSONDecodeError:
         print('JSONDecodeError: "template_objects/text.json"\n'
               '"template_objects/text_default.json" was used instead')
-        text_dict = create_default_file(path="template_objects/text_default.json")
+        text_dict = create_default_file(path=(script_dir / "template_objects" /" text_default.json").resolve())
 
     return text_dict
 
