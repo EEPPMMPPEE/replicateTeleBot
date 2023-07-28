@@ -1,0 +1,18 @@
+{
+  "SD": {
+    "thread_id": -1,
+    "model": "prompthero/openjourney",
+    "version": "ad59ca21177f9e217b9075e7300cf6e14f7e5b4505b87b9689dbd866e9768969",
+    "message_data_type": [
+      "text"
+    ],
+    "params": {
+      "negative_prompt": ""
+    },
+    "prompt_extend": "",
+    "neg_prompt_extend": "",
+    "short_params_converter": {
+      "no": "negative_prompt"
+    }
+  }
+}
