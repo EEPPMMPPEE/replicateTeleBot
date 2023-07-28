@@ -5,13 +5,13 @@ from dotenv import load_dotenv
 
 dotenv_variables = True  # use a variable from .env, the same variables will be overwritten
 
-main_chat_id = -1009876543210  # chat_id
+main_chat_id = "-957879541"  # chat_id
 
-telegram_bot_api_token = "9876543210:XXX_XXXXXXXXXXXXX-XXXXXX-XXXXXXXXXX"
-replicate_api_token = "X9_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+telegram_bot_api_token = "6623045661:AAEi0dDqCoaDcNmTqRpkQBq2doa77kRYBOI"
+replicate_api_token = "r8_TupicIWf7jpp8WggMHnZFf2tOnhmNMz1edEsF"
 
 dev_mode = True  # activate /handlers/other.py
-dev_admin_id = -1  # -1 or telegram_user_id for restrict development commands
+dev_admin_id = "790368402"  # -1 or telegram_user_id for restrict development commands
 
 # the number of available AI generations to user and time before restore
 generations_available_to_user = 25
