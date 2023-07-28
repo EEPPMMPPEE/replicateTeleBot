@@ -54,7 +54,7 @@ def get_text_dict(path=(script_dir / "template_objects" / "texts.json").resolve(
             "generation_in_progress": "Generation in progress...",
             "an_error_has_occurred": "An error has occurred",
             "run_out_of_uses_please_wait": "Run out of uses, please wait",
-            "/help": "/SD <<prompt>>"
+            "/help": "/draw <<prompt>>"
         }
         with open(path, 'w') as new_file:
             json.dump(text_dict, new_file, indent=2)
