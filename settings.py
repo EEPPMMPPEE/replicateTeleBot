@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 dotenv_variables = True  # use a variable from .env, the same variables will be overwritten
 
-main_chat_id = "-957879541"  # chat_id
+main_chat_id = "-1001965669348"  # chat_id
 
 telegram_bot_api_token = "6472358362:AAFJodZaR-kBlPNXf37JPqCCmeL_59P6ZtY"
 replicate_api_token = "r8_GAYqyfvgMsP8MhlBait3b7Mj1T2QcNm0xPqJg"
