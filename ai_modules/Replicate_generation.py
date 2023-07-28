@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 def replicate_sd_regex(in_str: str):
     text = in_str.replace("\n", " ")
-    match = re.fullmatch(r"^/(?P<model>[A-Z]{2,3})\s(?P<prompt>.+?)(?P<params>\s::.+)?$", text, flags=re.DOTALL)
+    match = re.fullmatch(r"^/(?P<model>[a-z]{2,3})\s(?P<prompt>.+?)(?P<params>\s::.+)?$", text, flags=re.DOTALL)
     if not match:
         return None
     match_dict = match.groupdict()
