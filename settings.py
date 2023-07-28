@@ -7,8 +7,8 @@ dotenv_variables = True  # use a variable from .env, the same variables will be 
 
 main_chat_id = "-957879541"  # chat_id
 
-telegram_bot_api_token = "6623045661:AAEi0dDqCoaDcNmTqRpkQBq2doa77kRYBOI"
-replicate_api_token = "r8_TupicIWf7jpp8WggMHnZFf2tOnhmNMz1edEsF"
+telegram_bot_api_token = "6472358362:AAFJodZaR-kBlPNXf37JPqCCmeL_59P6ZtY"
+replicate_api_token = "r8_GAYqyfvgMsP8MhlBait3b7Mj1T2QcNm0xPqJg"
 
 dev_mode = True  # activate /handlers/other.py
 dev_admin_id = "790368402"  # -1 or telegram_user_id for restrict development commands
